@@ -10,6 +10,8 @@ public class quizletRunner
 		public static int numOfCards;
 		static String term;
 		static String definition;
+		static int menuAnswer;
+		static Scanner scanner = new Scanner(System.in);
 
 		public static void main(String[] args)
 			{
@@ -18,7 +20,7 @@ public class quizletRunner
 
 		public static void setUp()
 			{
-				Scanner scanner = new Scanner(System.in);
+				
 				System.out.println("This is a program similar to quizlet. You will enter a term and a definition.");
 				System.out.println();
 				System.out.println("How many flashcards do you want to make?");
@@ -40,8 +42,23 @@ public class quizletRunner
 
 		public static void menu()
 			{
-				System.out.println("You now have the option to:");
-				System.out.println("");
+				System.out.println("You now have the option to do:");
+				System.out.println("(1) flashcards");
+				System.out.println("(2) a quiz");
+				System.out.println("(3) match the cards");
+				menuAnswer = scanner.nextInt();
+				
+				if(menuAnswer == 1) {
+					flashcards.studyFlashcards();
+					
+				}
+				if(menuAnswer == 2) {
+					
+				}
+				if(menuAnswer == 3) {
+					
+				}
+				
 			}
 
 	}
