@@ -25,7 +25,10 @@ public class flashcards
 				
 				if (choice.equals("Term"))
 					{
-
+						for(int i = 0; i <= quizlet.length(); i++)
+							{
+								
+							}
 					}
 
 				else if (choice.equals("Definition"))
