@@ -24,7 +24,7 @@ public class quizletRunner
 				System.out.println("How many flashcards do you want to make?");
 				
 				numOfCards = scanner.nextInt();
-				System.out.println("You know will input your flashcards.");
+				System.out.println("You now will input your flashcards.");
 				System.out.println();
 				scanner.nextLine();
 
