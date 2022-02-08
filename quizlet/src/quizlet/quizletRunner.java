@@ -16,6 +16,7 @@ public class quizletRunner
 		public static void main(String[] args)
 			{
 				setUp();
+				menu();
 			}
 
 		public static void setUp()
@@ -30,7 +31,7 @@ public class quizletRunner
 				System.out.println();
 				scanner.nextLine();
 
-				for (int i = 0; i <= numOfCards; i++)
+				for (int i = 0; i <= numOfCards - 1; i++)
 					{
 						System.out.println("Enter the term:");
 						term = scanner.nextLine();
