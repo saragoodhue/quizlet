@@ -7,7 +7,7 @@ public class quizletRunner
 	{
 
 		static ArrayList<quizlet> Flashcards = new ArrayList<quizlet>();
-		static int numOfCards;
+		public static int numOfCards;
 		static String term;
 		static String definition;
 
@@ -40,7 +40,8 @@ public class quizletRunner
 
 		public static void menu()
 			{
-
+				System.out.println("You now have the option to:");
+				System.out.println("");
 			}
 
 	}
