@@ -20,7 +20,7 @@ public class flashcards
 				
 				if (choice.equals("Term"))
 					{
-						for(int i = 0; i <= quizletRunner.numOfCards; i++)
+						for(int i = 0; i < quizletRunner.numOfCards; i++)
 							{
 								System.out.println();
 								System.out.println(quizletRunner.Flashcards.get(i).getTerm());
@@ -40,11 +40,13 @@ public class flashcards
 									}
 								
 							}
+						
+
 					}
 
 				else if (choice.equals("Definition"))
 					{
-						for(int i = 0; i <= quizletRunner.numOfCards; i++)
+						for(int i = 0; i < quizletRunner.numOfCards; i++)
 							{
 								System.out.println();
 								System.out.println(quizletRunner.Flashcards.get(i).getDefinition());
