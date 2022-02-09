@@ -40,7 +40,8 @@ public class flashcards
 									}
 								
 							}
-						
+
+						quizletRunner.menu();
 
 					}
 
@@ -65,6 +66,7 @@ public class flashcards
 										System.out.println("You got it!");
 									}
 							}
+						quizletRunner.menu();
 
 					}
 
