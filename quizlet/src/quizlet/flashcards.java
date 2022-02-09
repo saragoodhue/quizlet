@@ -40,6 +40,7 @@ public class flashcards
 									}
 								
 							}
+						quizletRunner.menu();
 					}
 
 				else if (choice.equals("Definition"))
@@ -63,6 +64,7 @@ public class flashcards
 										System.out.println("You got it!");
 									}
 							}
+						quizletRunner.menu();
 
 					}
 
