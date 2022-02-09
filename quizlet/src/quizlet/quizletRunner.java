@@ -8,7 +8,7 @@ public class quizletRunner
 
 		static ArrayList<quizlet> Flashcards = new ArrayList<quizlet>();
 		public static int numOfCards;
-		static String term;
+		public static String term;
 		static String definition;
 		static int menuAnswer;
 		static Scanner scanner = new Scanner(System.in);
@@ -37,7 +37,7 @@ public class quizletRunner
 						term = scanner.nextLine();
 						System.out.println("Enter the definition:");
 						definition = scanner.nextLine();
-						Flashcards.add(new quizlet("term", "definition"));
+						Flashcards.add(new quizlet(term, definition));
 					}
 			}
 
