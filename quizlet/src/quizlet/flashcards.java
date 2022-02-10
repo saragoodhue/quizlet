@@ -4,8 +4,9 @@ import java.util.Scanner;
 
 public class flashcards
 	{
-	static int counterRight = 0;
-	static int counterWrong = 0;
+	static double counterRight;
+	static double counterWrong;
+	static double grade;
 
 		public static void studyFlashcards()
 			{
@@ -35,18 +36,20 @@ public class flashcards
 									{
 										System.out.println("Sorry, that is not the definition you entered!");
 										counterWrong++;
-										double grade = counterRight/(counterWrong + counterRight);
+										grade = counterRight/(counterWrong + counterRight)*100;
 										System.out.println("Your percent of correct responses is: ");
 										System.out.printf("%.2f", grade);
+										System.out.print("%");
 									}
 								
 								else if(userDef.equals(quizletRunner.Flashcards.get(i).getDefinition()))
 									{
 										System.out.println("You got it!");
 										counterRight++;
-										double grade = counterRight/(counterWrong + counterRight);
+										grade = counterRight/(counterWrong + counterRight)*100;
 										System.out.println("Your percent of correct responses is: ");
 										System.out.printf("%.2f", grade);
+										System.out.println("%");
 									}
 								
 							}
@@ -70,18 +73,20 @@ public class flashcards
 									{
 										System.out.println("Sorry, that is not the definition you entered!");
 										counterWrong++;
-										double grade = counterRight/(counterWrong + counterRight);
+										grade = counterRight/(counterWrong + counterRight)*100;
 										System.out.println("Your percent of correct responses is: ");
 										System.out.printf("%.2f", grade);
+										System.out.print("%");
 									}
 								
 								else if(userTerm.equals(quizletRunner.Flashcards.get(i).getTerm()))
 									{
 										System.out.println("You got it!");
 										counterRight++;
-										double grade = counterRight/(counterWrong + counterRight);
+										grade = counterRight/(counterWrong + counterRight)*100;
 										System.out.println("Your percent of correct responses is: ");
 										System.out.printf("%.2f", grade);
+										System.out.println("%");
 									}
 							}
 						quizletRunner.menu();
