@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class flashcards
 	{
+	static int counterRight = 0;
+	static int counterWrong = 0;
 
 		public static void studyFlashcards()
 			{
@@ -32,11 +34,15 @@ public class flashcards
 								if(!userDef.equals(quizletRunner.definition))
 									{
 										System.out.println("Sorry, that is not the definition you entered!");
+										counterWrong++;
+										System.out.println("Your percent of correct responses is: " + counterRight/(counterWrong + counterRight));
 									}
 								
 								else if(userDef.equals(quizletRunner.definition))
 									{
 										System.out.println("You got it!");
+										counterRight++;
+										System.out.println("Your percent of correct responses is: " + counterRight/(counterWrong + counterRight));
 									}
 								
 							}
@@ -59,11 +65,15 @@ public class flashcards
 								if(!userTerm.equals(quizletRunner.term))
 									{
 										System.out.println("Sorry, that is not the definition you entered!");
+										counterWrong++;
+										System.out.println("Your percent of correct responses is: " + counterRight/(counterWrong + counterRight));
 									}
 								
 								else if(userTerm.equals(quizletRunner.term))
 									{
 										System.out.println("You got it!");
+										counterRight++;
+										System.out.println("Your percent of correct responses is: " + counterRight/(counterWrong + counterRight));
 									}
 							}
 						quizletRunner.menu();
