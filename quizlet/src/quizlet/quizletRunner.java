@@ -57,6 +57,7 @@ public class quizletRunner
 					
 				}
 				if(menuAnswer == 3) {
+					matching.match();
 					
 				}
 				
