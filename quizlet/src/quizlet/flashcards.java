@@ -8,7 +8,7 @@ public class flashcards
 		public static void studyFlashcards()
 			{
 				Scanner input = new Scanner(System.in);
-				System.out.println("Do you want to review with the term or definition?");
+				System.out.println("Do you want to review with the Term or Definition?");
 				String choice;
 				choice = input.nextLine();
 
@@ -29,12 +29,12 @@ public class flashcards
 								String userDef;
 								userDef = def.nextLine();
 								
-								if(!userDef.equals(quizletRunner.definition))
+								if(!userDef.equals(quizletRunner.Flashcards.get(i).getDefinition()))
 									{
 										System.out.println("Sorry, that is not the definition you entered!");
 									}
 								
-								else if(userDef.equals(quizletRunner.definition))
+								else if(userDef.equals(quizletRunner.Flashcards.get(i).getDefinition()))
 									{
 										System.out.println("You got it!");
 									}
@@ -56,12 +56,12 @@ public class flashcards
 								String userTerm;
 								userTerm = term.nextLine();
 								
-								if(!userTerm.equals(quizletRunner.term))
+								if(!userTerm.equals(quizletRunner.Flashcards.get(i).getTerm()))
 									{
 										System.out.println("Sorry, that is not the definition you entered!");
 									}
 								
-								else if(userTerm.equals(quizletRunner.term))
+								else if(userTerm.equals(quizletRunner.Flashcards.get(i).getTerm()))
 									{
 										System.out.println("You got it!");
 									}
