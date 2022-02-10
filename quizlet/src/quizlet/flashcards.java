@@ -35,14 +35,18 @@ public class flashcards
 									{
 										System.out.println("Sorry, that is not the definition you entered!");
 										counterWrong++;
-										System.out.println("Your percent of correct responses is: " + counterRight/(counterWrong + counterRight));
+										double grade = counterRight/(counterWrong + counterRight);
+										System.out.println("Your percent of correct responses is: ");
+										System.out.printf("%.2f", grade);
 									}
 								
 								else if(userDef.equals(quizletRunner.Flashcards.get(i).getDefinition()))
 									{
 										System.out.println("You got it!");
 										counterRight++;
-										System.out.println("Your percent of correct responses is: " + counterRight/(counterWrong + counterRight));
+										double grade = counterRight/(counterWrong + counterRight);
+										System.out.println("Your percent of correct responses is: ");
+										System.out.printf("%.2f", grade);
 									}
 								
 							}
@@ -66,14 +70,18 @@ public class flashcards
 									{
 										System.out.println("Sorry, that is not the definition you entered!");
 										counterWrong++;
-										System.out.println("Your percent of correct responses is: " + counterRight/(counterWrong + counterRight));
+										double grade = counterRight/(counterWrong + counterRight);
+										System.out.println("Your percent of correct responses is: ");
+										System.out.printf("%.2f", grade);
 									}
 								
 								else if(userTerm.equals(quizletRunner.Flashcards.get(i).getTerm()))
 									{
 										System.out.println("You got it!");
 										counterRight++;
-										System.out.println("Your percent of correct responses is: " + counterRight/(counterWrong + counterRight));
+										double grade = counterRight/(counterWrong + counterRight);
+										System.out.println("Your percent of correct responses is: ");
+										System.out.printf("%.2f", grade);
 									}
 							}
 						quizletRunner.menu();
