@@ -1,11 +1,11 @@
 package quizlet;
 
-public class quizlet {
+public class Quizlet {
 	private String term;
 	private String definition;
 	
 	
-	public quizlet(String t, String d) {
+	public Quizlet(String t, String d) {
 		term = t;
 		definition = d;
 		

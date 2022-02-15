@@ -1,5 +1,5 @@
 package quizlet;
 
-public class quiz {
+public class Quiz {
 
 }

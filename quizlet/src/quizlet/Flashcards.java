@@ -2,7 +2,7 @@ package quizlet;
 
 import java.util.Scanner;
 
-public class flashcards
+public class Flashcards
 	{
 	static double counterRight;
 	static double counterWrong;
@@ -23,16 +23,16 @@ public class flashcards
 				
 				if (choice.equals("Term"))
 					{
-						for(int i = 0; i < quizletRunner.numOfCards; i++)
+						for(int i = 0; i < QuizletRunner.numOfCards; i++)
 							{
 								System.out.println();
-								System.out.println(quizletRunner.Flashcards.get(i).getTerm());
+								System.out.println(QuizletRunner.Flashcards.get(i).getTerm());
 								System.out.println("What is the definition?");
 								Scanner def = new Scanner(System.in);
 								String userDef;
 								userDef = def.nextLine();
 								
-								if(!userDef.equals(quizletRunner.Flashcards.get(i).getDefinition()))
+								if(!userDef.equals(QuizletRunner.Flashcards.get(i).getDefinition()))
 									{
 										System.out.println("Sorry, that is not the definition you entered!");
 										counterWrong++;
@@ -42,7 +42,7 @@ public class flashcards
 										System.out.print("%");
 									}
 								
-								else if(userDef.equals(quizletRunner.Flashcards.get(i).getDefinition()))
+								else if(userDef.equals(QuizletRunner.Flashcards.get(i).getDefinition()))
 									{
 										System.out.println("You got it!");
 										counterRight++;
@@ -54,22 +54,22 @@ public class flashcards
 								
 							}
 
-						quizletRunner.menu();
+						QuizletRunner.menu();
 
 					}
 
 				else if (choice.equals("Definition"))
 					{
-						for(int i = 0; i < quizletRunner.numOfCards; i++)
+						for(int i = 0; i < QuizletRunner.numOfCards; i++)
 							{
 								System.out.println();
-								System.out.println(quizletRunner.Flashcards.get(i).getDefinition());
+								System.out.println(QuizletRunner.Flashcards.get(i).getDefinition());
 								System.out.println("What is the term?");
 								Scanner term = new Scanner(System.in);
 								String userTerm;
 								userTerm = term.nextLine();
 								
-								if(!userTerm.equals(quizletRunner.Flashcards.get(i).getTerm()))
+								if(!userTerm.equals(QuizletRunner.Flashcards.get(i).getTerm()))
 									{
 										System.out.println("Sorry, that is not the definition you entered!");
 										counterWrong++;
@@ -79,7 +79,7 @@ public class flashcards
 										System.out.print("%");
 									}
 								
-								else if(userTerm.equals(quizletRunner.Flashcards.get(i).getTerm()))
+								else if(userTerm.equals(QuizletRunner.Flashcards.get(i).getTerm()))
 									{
 										System.out.println("You got it!");
 										counterRight++;
@@ -89,7 +89,7 @@ public class flashcards
 										System.out.println("%");
 									}
 							}
-						quizletRunner.menu();
+						QuizletRunner.menu();
 
 					}
 

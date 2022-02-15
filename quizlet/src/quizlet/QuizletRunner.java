@@ -3,10 +3,10 @@ package quizlet;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class quizletRunner
+public class QuizletRunner
 	{
 
-		static ArrayList<quizlet> Flashcards = new ArrayList<quizlet>();
+		static ArrayList<Quizlet> Flashcards = new ArrayList<Quizlet>();
 		public static int numOfCards;
 		public static String term;
 		static String definition;
@@ -21,11 +21,11 @@ public class quizletRunner
 
 		public static void setUp()
 			{
-				
+
 				System.out.println("This is a program similar to quizlet. You will enter a term and a definition.");
 				System.out.println();
 				System.out.println("How many flashcards do you want to make?");
-				
+
 				numOfCards = scanner.nextInt();
 				System.out.println("You now will input your flashcards.");
 				System.out.println();
@@ -37,30 +37,35 @@ public class quizletRunner
 						term = scanner.nextLine();
 						System.out.println("Enter the definition:");
 						definition = scanner.nextLine();
-						Flashcards.add(new quizlet(term, definition));
+						Flashcards.add(new Quizlet(term, definition));
 					}
 			}
 
 		public static void menu()
 			{
+				System.out.println();
 				System.out.println("You now have the option to do:");
 				System.out.println("(1) flashcards");
 				System.out.println("(2) a quiz");
 				System.out.println("(3) match the cards");
 				menuAnswer = scanner.nextInt();
-				
-				if(menuAnswer == 1) {
-					flashcards.studyFlashcards();
-					
-				}
-				if(menuAnswer == 2) {
-					
-				}
-				if(menuAnswer == 3) {
-					matching.match();
-					
-				}
-				
+				System.out.println();
+
+				if (menuAnswer == 1)
+					{
+						Flashcards.studyFlashcards();
+
+					}
+				if (menuAnswer == 2)
+					{
+
+					}
+				if (menuAnswer == 3)
+					{
+						Matching.match();
+
+					}
+
 			}
 
 	}
